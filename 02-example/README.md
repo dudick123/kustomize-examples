@@ -1,0 +1,1 @@
+https://www.digitalocean.com/community/tutorials/how-to-manage-your-kubernetes-configurations-with-kustomize
