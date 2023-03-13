@@ -77,3 +77,26 @@ When more than one files is generated, as is the case with prod, the file names 
 
 There may be some other underlying capabilities in Kustomize that allow you to target specifc file names. Have not found anything yet.
 
+### Final Directory Structure
+
+```
+.
+├── README.md
+├── manifests
+│   ├── dev
+│   │   └── deployment.yaml
+│   └── prod
+│       ├── apps_v1_deployment_production-nginx-deployment.yaml
+│       └── v1_namespace_production.yaml
+└── templates
+    ├── base
+    │   ├── deployment.yaml
+    │   └── kustomization.yaml
+    └── environments
+        ├── dev
+        │   └── kustomization.yaml
+        └── prod
+            ├── deployment.yaml
+            ├── kustomization.yaml
+            └── namespace.yaml
+```
